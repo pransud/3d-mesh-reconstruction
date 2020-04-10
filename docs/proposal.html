@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>
+    body {
+        padding: 50px;
+        width: 1000px;
+        margin: auto;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+        color: #121212;
+        text-align: middle;
+    }
+    table, tbody, tr, td {
+        margin: 0;
+        padding-right: 15px;
+        border: 0;
+        border-spacing: 0;
+        vertical-align: top;
+    }
+    td {
+        width: 325px;
+    }
+    figcaption {
+        text-align: justify;
+    }
+    b {
+        color: mediumslateblue;
+    }
+    li {
+        text-align: left;
+        padding: 5px;
+    }
+</style>
+<title>CS 184 Final Project Proposal</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+    <h1 align="middle">3D Mesh Reconstruction from Smartphone Videos</h1>
+    <h1 align="middle">Final Project Proposal</h1>
+
+    <div align="middle">
+        <img src="img/overview.jpg" align="middle" width="400px"/>
+    </div>
+
+    <div align="middle">
+        <h2 align="middle">Project Information</h2>
+        <ul>
+            <li>
+                <b>Title:</b> 3D Mesh Reconstruction from Smartphone Videos
+            </li>
+            <li>
+                <b>Summary:</b> Given multiple images or a video from a smartphone, we will reconstruct a 3D object mesh. This will involve real-time scanning around the object and post-processing.
+            </li>
+            <li>
+                <b>Team Members:</b> Ryan Leung, Ivy Nguyen, Pransu Dash
+            </li>
+        </ul>
+    </div>
+
+    <div align="middle">
+        <h2 align="middle">Project Description</h2>
+        <ul>
+            <li>
+                <b>Problem:</b> With regards to 3D modeling, it can be a painstaking process to create digital representations of real-life objects, like buildings for architectural models and real-life objects for 3D printing or video games.
+            </li>
+            <li>
+                <b>Our Proposed Solution:</b> Using videos to scan a physical object can be a more efficient method of 3D modeling. This is currently a heavily researched area and the current solutions are computationally heavy and not very good at reproducing all features. We want to work on creating a more accurate 3D mesh of real-life objects and if we have time, realistic texture mapping. We hope to accomplish this with open source libraries. We will look for potential improvements, such as rendering simple shapes more accurately and smoothly.
+            </li>
+        </ul>
+    </div>
+
+    <div align="middle">
+        <h2 align="middle">Goals and Deliverables</h2>
+        <ol>
+            <li>
+                <b>What we plan to deliver (base goal):</b>
+                <ul>
+                    <li>
+                        We plan to deliver 3D renderings in an interactive environment (similar to those of projects 2, 3, and 4) based on sample 360-degree mp4 files we take on our smartphones.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>What we hope to deliver (stretch goal):</b>
+                <ul>
+                    <li>
+                        We hope to package the code as an easy to use smart-phone app.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>How to measure the quality / performance of our system:</b>
+                <ul>
+                    <li>
+                        We checked sites like <a href="https://www.researchgate.net/post/What_is_a_good_method_for_checking_the_accuracy_of_a_3D_model_created_from_a_scan2">this</a> for how to quantify accuracy of 3D models, but there isn't a well-defined procedure, so we will subjectively determine visual similarity to reality.
+                    </li>
+                    <li>
+                        Compare rendering times for simple and complex scenes/geometries
+                    </li>
+                    <li>
+                        If possible, low GPU usage and fast rendering times
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Define the kind of images you will create:</b>
+                <div align="middle">
+                    <table>
+                        <tr>
+                            <td width="400px">
+                                <img src="img/mesh_reprod_sample.png" align="middle" width="400px"/>
+                                <figcaption align="middle">Mesh Reproduction</figcaption>
+                            </td>
+                            <td width="400px">
+                                <img src="img/texture_map_sample.png" align="middle" width="400px"/>
+                                <figcaption align="middle">Texture Mapped</figcaption>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+
+            <li>
+                <b>If you are working on an interactive system, describe what demo you will create:</b>
+                <ul>
+                    <li>
+                        We will take a 360 degree video of an object and then use that as input in the command line. After running the executable, the program will post-process the video and render a 3D mesh object.
+                    </li>
+                    <li>
+                        If there is extra time, we can show the object being used in a scene rendered by Unity.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Schedule</b>
+                <ul>
+                    <li>
+                        <b>Week 1 (4/9-4/16):</b>
+                        <ul>
+                            <li>Standardize input video file - define specifications for the video.</li>
+                            <ul>
+                                <li>Does the object need to be on a white background?</li>
+                                <li>How many fps/keyframes?</li>
+                            </ul>
+                            <li>Depth map estimation</li>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div align="middle">
+        <h2 align="middle">Resources</h2>
+        <ol>
+            <li>
+                <b>Computing platform: MacOS, potentially iOS if we can get to the app</b>
+            </li>
+            <li>
+                <a href="https://blog.kitware.com/3d-reconstruction-from-smartphone-videos/">https://blog.kitware.com/3d-reconstruction-from-smartphone-videos/</a>
+            </li>
+            <li>
+                <a href="http://openaccess.thecvf.com/content_cvpr_2016_workshops/w14/papers/Muratov_3DCapture_3D_Reconstruction_CVPR_2016_paper.pdf">http://openaccess.thecvf.com/content_cvpr_2016_workshops/w14/papers/Muratov_3DCapture_3D_Reconstruction_CVPR_2016_paper.pdf</a>
+            </li>
+            <li>
+                <a href="https://github.com/Kitware/maptk">https://github.com/Kitware/maptk</a>
+            </li>
+        </ol>
+    </div>
+
+</body>
