@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>
+    body {
+        padding: 50px;
+        width: 1000px;
+        margin: auto;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+        color: #121212;
+    }
+    table, tbody, tr, td {
+        margin: 0;
+        padding-right: 15px;
+        border: 0;
+        border-spacing: 0;
+        vertical-align: top;
+    }
+    td {
+        width: 325px;
+    }
+    figcaption {
+        text-align: justify;
+    }
+    b {
+        color: mediumslateblue;
+    }
+    li {
+        text-align: left;
+        padding: 5px;
+    }
+</style>
+<title>CS 184 Final Project</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+    <h1 align="middle">3D Mesh Reconstruction from Point Clouds</h1>
+    <h1 align="middle">Final Project Milestone Page</h1>
+
+    <div align="middle">
+        <img src="img/overview.png" align="middle" width="400px"/>
+    </div>
+
+    <div align="middle">
+        <h2 align="middle">Project Information</h2>
+        <ul>
+            <li>
+                <b>Title:</b> 3D Mesh Reconstruction from Point Clouds
+            </li>
+            <li>
+                <b>Summary:</b> Given an input point cloud (as a ply file listing locations of vertices), we will
+                reconstruct a 3D object triangle mesh. The mesh will follow representations we saw in class.
+            </li>
+            <li>
+                <b>Team Members:</b> Pransu Dash, Ryan Leung, Ivy Nguyen
+            </li>
+            <li>
+                <a href="proposal.html">Original Project Proposal Here</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div align="middle">
+        <h2 align="middle">Progress So Far</h2>
+        <p align="left">Our original proposal was to output 3D renderings from 360-degree mp4 files taken on smartphones, but we
+            quickly realized that this was too ambitious. We've narrowed our focus to the data integration phase of
+            the 3D data acquisition pipeline, and we will implement the ball-pivoting algorithm.
+        </p>
+        <img src="img/milestone1.png" align="middle" width="400px"/>
+        <p align="left">
+            First, we read The Ball-Pivoting Algorithm for Surface Reconstruction
+            (https://lidarwidgets.com/samples/bpa_tvcg.pdf). Then, we tried out the Point Cloud Library
+            (http://pointclouds.org/) for computing point normals for a point cloud. However, because this wasn’t the
+            main objective for the project and we ran into errors with this computation, we decided to look for
+            point cloud files that already have point normals calculated.
+        </p>
+        <img src="img/milestone2.png" align="middle" width="400px"/>
+        <img src="img/milestone3.png" align="middle" width="400px"/>
+        <img src="img/milestone4.png" align="middle" width="400px"/>
+        <p align="left">
+            Next, we plan on implementing the data structures and functions used to run the ball-pivoting algorithm
+            that we outlined in the slides.
+        </p>
+    </div>
+
+    <div align="middle">
+        <h2 align="middle">Project Milestone Video</h2>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/RKug1UfS0Uk"></iframe>
+        <br>
+        <a href="https://www.youtube.com/watch?v=RKug1UfS0Uk">Link to Video on Youtube</a>
+    </div>
+
+
+    <div align="middle">
+        <h2 align="middle">Project Milestone Slides</h2>
+        <iframe
+                src="https://docs.google.com/presentation/d/e/2PACX-1vQuHzTQ1tClC9e9tcGEiGMjwWovdpkfxSSdC1iEd4uahTrsUqDOUO1F0aTer5bnGLimekQyeLV1beMV/embed?start=false&loop=false&delayms=10000"
+                frameborder="0" width="685index.html" height="415" allowfullscreen="true"
+                mozallowfullscreen="true" webkitallowfullscreen="true">
+        </iframe>
+        <br>
+        <a href="https://docs.google.com/presentation/d/17LQh8Stm73oL2Gswn5pYNnlpg3D8AjtVH1OvbzFjkMc/edit?usp=sharing">
+            Link to slides on Google Slides
+        </a>
+    </div>
+
+</body>
